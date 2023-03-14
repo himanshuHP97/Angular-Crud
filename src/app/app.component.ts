@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularCURD';
+  isChecked: boolean = false;
+
+  clicked(){
+    this.isChecked = true;
+    this.title = 'Event Trigged';
+  }
 }
